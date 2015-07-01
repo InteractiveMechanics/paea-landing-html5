@@ -1,0 +1,76 @@
+// VARIABLES
+
+$primary-font: Helvetica, Arial, sans-serif; // replace with Avenir Next
+$primary-color: #007964; // green
+$primary-color-light: #7fcac3;
+$accent-color: #e24e34;  // coral
+$neutral-accent-color: #3d434b; // dark grey
+
+
+//TYPOGRAPHY 
+
+* {
+	font-family: $primary-font;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+	color: $primary-color;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 16px;
+	line-height: 2;
+	margin-top: 24px;
+}
+
+// LAYOUT
+.page-title {
+	background-color: $accent-color;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: center;
+	h1 {
+		font-size: 21px;
+		padding: 5px;
+	}
+}
+
+.page-subtitle {
+	text-align: center;
+	padding: 15px;
+	
+	.accented-text {
+		color: $accent-color;
+		font-weight: 700;
+	}
+}
+
+.jumbotron {
+	background: url(../images/landing_hero@2x.png);
+	background-size: cover;
+}
+
+.date-banner {
+	background: rgba(35,31,32,0.25);
+	margin-left: -90px;
+	margin-right: -90px;
+	margin-top: 90px;
+	margin-bottom: -49px;
+	text-align: center;
+	h3 {
+		display: inline-block;
+		color: #fff;
+		padding: 15px;
+	}
+}
+
+
+

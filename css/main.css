@@ -1,0 +1,51 @@
+* {
+  font-family: Helvetica, Arial, sans-serif; }
+
+h2 {
+  font-size: 36px;
+  font-weight: 300; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #007964;
+  text-transform: uppercase; }
+
+p {
+  font-size: 16px;
+  line-height: 2;
+  margin-top: 24px; }
+
+.page-title {
+  background-color: #e24e34;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center; }
+  .page-title h1 {
+    font-size: 21px;
+    padding: 5px; }
+
+.page-subtitle {
+  text-align: center;
+  padding: 15px; }
+  .page-subtitle .accented-text {
+    color: #e24e34;
+    font-weight: 700; }
+
+.jumbotron {
+  background: url(../images/landing_hero@2x.png);
+  background-size: cover; }
+
+.date-banner {
+  background: rgba(35, 31, 32, 0.25);
+  margin-left: -90px;
+  margin-right: -90px;
+  margin-top: 90px;
+  margin-bottom: -49px;
+  text-align: center; }
+  .date-banner h3 {
+    display: inline-block;
+    color: #fff;
+    padding: 15px; }
+
+/*# sourceMappingURL=main.css.map */
