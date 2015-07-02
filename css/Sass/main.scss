@@ -28,7 +28,28 @@ h3 {
 p {
 	font-size: 16px;
 	line-height: 2;
-	margin-top: 24px;
+	margin-top: 25px;
+	&:nth-of-type(2) {
+		margin-bottom: 35px;
+	}
+}
+
+.accented-text {
+	font-weight: 700;
+}
+
+a {
+	color: initial;
+	&:hover {
+		color: initial;
+	}
+}
+
+a svg {
+	width: 155px;
+	ellipse:hover {
+		fill: $primary-color-light;
+	}
 }
 
 // LAYOUT
@@ -49,7 +70,6 @@ p {
 	
 	.accented-text {
 		color: $accent-color;
-		font-weight: 700;
 	}
 }
 
@@ -71,6 +91,91 @@ p {
 		padding: 15px;
 	}
 }
+
+#countdown {
+	background: url(../images/landing_footer.png);
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 50px;
+	h2 {
+		margin-top: 2.5em;
+		margin-bottom: 1em;
+	}
+	p {
+		line-height: 1;
+		margin-top: 0;
+	}
+	.accented-text {
+		color: #fff;
+	}
+
+	#days, #hours, #seconds {
+		font-size: 72px;
+		font-weight: 300;
+		//margin: 5px 20px;
+	}
+	#days-label, #hours-label, #seconds-label {
+		text-transform: uppercase;
+		font-weight: 900;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+.resource-type {
+	margin-left: 10px;
+	margin-right: 5px;
+	padding: 6px 12px;
+	border-radius: 10px;
+	color: $primary-color;
+	text-transform: uppercase;
+	border: 2px solid $primary-color;
+}
+
+.btn-default {
+	width: 100%;
+	border: 1px solid transparent;
+	background-color: #fff;
+	color: #000;
+	margin: 20px 0;
+	border-radius: 5px;
+	&:hover {
+			background-color: #fff;
+			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+			.resource-type {
+				color: #fff;
+				background-color: $primary-color;
+			}
+		}
+		p {
+		display: inline-block;
+		font-size: 16px;
+		color: $primary-color;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+// FOOTER
+
+footer {
+	background: $neutral-accent-color;
+	color: #fff;
+	p {
+		display: inline-block;
+		margin-left: 20px;
+	}
+	a {
+		color: #fff;
+		&:hover {
+			color: #fff;
+		}
+	}	
+}
+
 
 
 

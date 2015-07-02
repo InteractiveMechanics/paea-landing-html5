@@ -14,7 +14,22 @@ h3 {
 p {
   font-size: 16px;
   line-height: 2;
-  margin-top: 24px; }
+  margin-top: 25px; }
+  p:nth-of-type(2) {
+    margin-bottom: 35px; }
+
+.accented-text {
+  font-weight: 700; }
+
+a {
+  color: initial; }
+  a:hover {
+    color: initial; }
+
+a svg {
+  width: 155px; }
+  a svg ellipse:hover {
+    fill: #7fcac3; }
 
 .page-title {
   background-color: #e24e34;
@@ -29,8 +44,7 @@ p {
   text-align: center;
   padding: 15px; }
   .page-subtitle .accented-text {
-    color: #e24e34;
-    font-weight: 700; }
+    color: #e24e34; }
 
 .jumbotron {
   background: url(../images/landing_hero@2x.png);
@@ -47,5 +61,69 @@ p {
     display: inline-block;
     color: #fff;
     padding: 15px; }
+
+#countdown {
+  background: url(../images/landing_footer.png);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px; }
+  #countdown h2 {
+    margin-top: 2.5em;
+    margin-bottom: 1em; }
+  #countdown p {
+    line-height: 1;
+    margin-top: 0; }
+  #countdown .accented-text {
+    color: #fff; }
+  #countdown #days, #countdown #hours, #countdown #seconds {
+    font-size: 72px;
+    font-weight: 300; }
+  #countdown #days-label, #countdown #hours-label, #countdown #seconds-label {
+    text-transform: uppercase;
+    font-weight: 900; }
+
+img {
+  width: 100%; }
+
+.resource-type {
+  margin-left: 10px;
+  margin-right: 5px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  color: #007964;
+  text-transform: uppercase;
+  border: 2px solid #007964; }
+
+.btn-default {
+  width: 100%;
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #000;
+  margin: 20px 0;
+  border-radius: 5px; }
+  .btn-default:hover {
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
+    .btn-default:hover .resource-type {
+      color: #fff;
+      background-color: #007964; }
+  .btn-default p {
+    display: inline-block;
+    font-size: 16px;
+    color: #007964;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+footer {
+  background: #3d434b;
+  color: #fff; }
+  footer p {
+    display: inline-block;
+    margin-left: 20px; }
+  footer a {
+    color: #fff; }
+    footer a:hover {
+      color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
