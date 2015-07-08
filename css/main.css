@@ -95,19 +95,32 @@ img {
   text-transform: uppercase;
   border: 2px solid #007964; }
 
+.right-arrow {
+  height: 0px;
+  width: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 17.32px solid rgba(35, 31, 32, 0.25);
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 10px; }
+
 .btn-default {
   width: 100%;
-  border: 1px solid transparent;
+  border: 1px solid #dedede;
   background-color: #fff;
   color: #000;
   margin: 20px 0;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-align: left; }
   .btn-default:hover {
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
     .btn-default:hover .resource-type {
       color: #fff;
       background-color: #007964; }
+    .btn-default:hover .right-arrow {
+      border-left: 17.32px solid #007964; }
   .btn-default p {
     display: inline-block;
     font-size: 16px;
