@@ -76,10 +76,10 @@ a svg {
     margin-top: 0; }
   #countdown .accented-text {
     color: #fff; }
-  #countdown #days, #countdown #hours, #countdown #seconds {
+  #countdown #days, #countdown #hours, #countdown #minutes {
     font-size: 72px;
     font-weight: 300; }
-  #countdown #days-label, #countdown #hours-label, #countdown #seconds-label {
+  #countdown #days-label, #countdown #hours-label, #countdown #minutes-label {
     text-transform: uppercase;
     font-weight: 900; }
 
