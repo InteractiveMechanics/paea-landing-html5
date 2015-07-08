@@ -98,11 +98,11 @@ img {
 .right-arrow {
   height: 0px;
   width: 0px;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17.32px solid rgba(35, 31, 32, 0.25);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12.124px solid #007964;
   float: right;
-  margin-top: 15px;
+  margin-top: 17px;
   margin-bottom: 10px; }
 
 .btn-default {
@@ -115,12 +115,13 @@ img {
   text-align: left; }
   .btn-default:hover {
     background-color: #fff;
+    border: 1px solid transparent;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
     .btn-default:hover .resource-type {
       color: #fff;
       background-color: #007964; }
     .btn-default:hover .right-arrow {
-      border-left: 17.32px solid #007964; }
+      border-left: 12.124px solid rgba(35, 31, 32, 0.25); }
   .btn-default p {
     display: inline-block;
     font-size: 16px;
