@@ -31,6 +31,9 @@ a svg {
   a svg ellipse:hover {
     fill: #7fcac3; }
 
+.bottom-divider {
+  border-bottom: 1px solid #dedede; }
+
 .page-title {
   background-color: #e24e34;
   text-transform: uppercase;
@@ -140,6 +143,37 @@ img {
 footer {
   background: #3d434b;
   color: #fff; }
+  footer .email-sign-up {
+    padding: 20px 0 0 10px;
+    margin-bottom: 25px; }
+    footer .email-sign-up h2 {
+      margin-top: 30px; }
+  footer .input-group {
+    position: relative;
+    width: 80%; }
+  footer .btn-default {
+    border-radius: 12px;
+    border: 1px solid transparent;
+    height: 55px;
+    background-color: #ccc;
+    position: absolute;
+    color: #fff; }
+    footer .btn-default:hover {
+      background-color: #ccc;
+      color: #007964;
+      border-color: transparent;
+      box-shadow: none; }
+  footer .form-control {
+    margin-left: 3em;
+    margin-top: 1em;
+    height: 55px;
+    border-radius: 12px;
+    padding: 20px 15px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    color: #3d434b;
+    font-weight: 300; }
   footer p {
     display: inline-block;
     margin-left: 20px; }
