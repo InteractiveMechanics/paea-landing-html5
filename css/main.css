@@ -34,6 +34,9 @@ a svg {
 .bottom-divider {
   border-bottom: 1px solid #aaa; }
 
+#logo {
+  margin-left: 1.5rem; }
+
 .page-title {
   margin-top: 50px;
   background-color: #e24e34;
@@ -50,6 +53,9 @@ a svg {
   margin-bottom: 7em; }
   .page-subtitle .accented-text {
     color: #e24e34; }
+  @media screen and (max-width: 480px) {
+    .page-subtitle {
+      font-size: 24px; } }
 
 .jumbotron {
   background: url(../images/landing_hero@2x.png);
@@ -70,9 +76,17 @@ a svg {
 .date-banner-left {
   text-align: right;
   border-right: 1px solid #fff; }
+  @media screen and (max-width: 480px) {
+    .date-banner-left {
+      text-align: center;
+      border-right: 1px solid transparent;
+      border-bottom: 1px solid #fff; } }
 
 .date-banner-right {
   text-align: left; }
+  @media screen and (max-width: 480px) {
+    .date-banner-right {
+      text-align: center; } }
 
 #countdown {
   background: url(../images/landing_footer.png);
@@ -83,6 +97,9 @@ a svg {
   #countdown h2 {
     margin-top: 2.5em;
     margin-bottom: 1em; }
+    @media screen and (max-width: 480px) {
+      #countdown h2 {
+        font-size: 20px; } }
   #countdown p {
     line-height: 1;
     margin-top: 0; }
@@ -140,6 +157,12 @@ img {
     color: #007964;
     margin-top: 10px;
     margin-bottom: 10px; }
+
+#video-link {
+  color: #007964;
+  float: right;
+  margin-bottom: 7em;
+  margin-left: 1em; }
 
 footer {
   background: #3d434b;
