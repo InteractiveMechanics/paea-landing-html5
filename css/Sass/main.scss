@@ -137,9 +137,6 @@ a svg {
 	h2 {
 		margin-top: 2.5em;
 		margin-bottom: 1em;
-		@media screen and (max-width: 480px) {
-			font-size: 20px;
-		}
 	}
 	p {
 		line-height: 1;
@@ -153,6 +150,9 @@ a svg {
 		font-size: 72px;
 		font-weight: 300;
 		//margin: 5px 20px;
+		@media screen and (max-width: 480px) {
+			font-size: 48px;
+		}
 	}
 	#days-label, #hours-label, #minutes-label {
 		text-transform: uppercase;
@@ -235,12 +235,19 @@ footer {
 		margin-bottom: 25px;
 		h2 {
 			margin-top: 30px;
+			@media screen and (max-width: 480px) {
+				font-size: 2em;
+				text-align: center;
+			}
 		}
 	}
 
 	.input-group {
 		position: relative;
 		width: 80%;
+		@media screen and (max-width: 768px) {
+			width: 100%;
+		}
 	}
 
 	.btn-default {
@@ -271,12 +278,24 @@ footer {
 		background-color: #ccc;
 		color: $neutral-accent-color;
 		font-weight: 300;
+		@media screen and (max-width: 480px) {
+			margin-left: 0;
+		}
 	}
 
 
-	p {
+	h5 {
 		display: inline-block;
-		margin-left: 20px;
+		margin: 30px 10px;
+		font-size: 16px;
+		@media screen and (max-width: 768px) {
+			display: block;
+			line-height: initial;
+			margin-left: 1em;
+			margin: 15px 5px;
+			font-size: 11px;
+			text-align: center;
+		}
 	}
 	a {
 		color: #fff;
