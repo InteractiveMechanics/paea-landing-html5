@@ -30,12 +30,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
     </head>
+
     <body>
      <div class="jumbotron">
       <div class="container">
        <div class="row">
-        <a href="http://www.paeaonline.org/"><img id="logo" src="images/logo@2x.png"></a>
-      </div>
+          <a href="http://www.paeaonline.org/"><img id="logo" src="images/logo@2x.png" alt="PAEA logo"></a>
+        </div>
       <div class="row">
         <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1 page-subtitle">
           <h2 class="hidden-xs">A convening of thought leaders and innovators to essential knowledge, skills and behaviors required of the <br><span class="accented-text">PA workforce in the future</span></h2>
@@ -51,53 +52,55 @@
         <h3>60 Thought Leaders</h3>
       </div>
     </div> <!-- end date-banner -->
-  </div> <!-- end jumbotron -->
-  <main>
-   <section>
-    <div class="container">
-     <div class="row">
-      <div class="col-sm-5 col-sm-offset-1">
-       <h4>About the Summit</h4>
-       <p>The Physician Assistant Education Association (PAEA) is hosting a two-day summit to bring together a variety of key stakeholders in the health care sector.  Our goal? To ensure that competencies for physician assistant graduates are relevant to the needs of the health care workforce today and in the future.</p>
-       <p>These key stakeholders are drawn straight from the front lines of health care and education, and will include a diverse array of clinicians, health care administrators, educators, government stakeholders, insurers, and students. Our summit will facilitate a discussion among these participants to address the future of PA education.</p>
-     </div>
-     <div class="col-sm-5">
-       <h4>Our Initiative</h4>
-       <img src="images/video_placeholder@2x.png" id="video-image" alt="video placeholder image">
-       <a href="#" class="visible-sm visible-xs" id="video-link">View on YouTube &raquo;</a>
-       <a class="btn btn-default hidden-xs hidden-sm" href="#" role="button" id="pdf-button"><span class="resource-type">PDF</span>
-        <h4 id="button-text">2015 PAEA Initiatives</h4><div class="right-arrow"></div></a>
-      </div>			
-    </div> <!-- end row -->
-  </div> <!-- end container -->
-</section>
-<section id="countdown">
-  <div class="container">
-   <div clas="row">
-    <div class="col-sm-10 col-sm-offset-1">
-     <h2 class="hidden-xs hidden-sm">Check back often for regular updates and more information about this <span class="accented-text">crucial conversation.</span></h2>
-     <h2 class="visible-xs visible-sm">Check back often for updates and more info.</h2>
-   </div>
-   <div id="countdown-holder hidden-xs hidden-sm">
-     <div class="col-xs-4 col-sm-2 col-sm-offset-3">
-      <p id="days"></p>
-      <p id="days-label">days</p>
-    </div>
-    <div class="col-xs-4 col-sm-2">
-      <p id="hours"></p>
-      <p id="hours-label">hours</p>	
-    </div>
-    <div class="col-xs-4 col-sm-2">
-      <p id="minutes"></p>
-      <p id="minutes-label">minutes</p>	
-    </div>
-  </div> <!-- end countdown-holder -->
-</div>  <!-- end row -->
-</div> <!-- end container -->
-</section>
-</main>
-<footer>
-	<div class="container">
+    </div> <!-- end jumbotron -->
+
+    <main>
+      <section>
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1">
+            <h4>About the Summit</h4>
+            <p>The Physician Assistant Education Association (PAEA) is hosting a two-day summit to bring together a variety of key stakeholders in the health care sector.  Our goal? To ensure that competencies for physician assistant graduates are relevant to the needs of the health care workforce today and in the future.</p>
+            <p>These key stakeholders are drawn straight from the front lines of health care and education, and will include a diverse array of clinicians, health care administrators, educators, government stakeholders, insurers, and students. Our summit will facilitate a discussion among these participants to address the future of PA education.</p>
+          </div>
+          <div class="col-sm-5">
+            <h4>Our Initiative</h4>
+            <img src="images/video_placeholder@2x.png" id="video-image" alt="video placeholder image">
+            <a href="#" class="visible-sm visible-xs" id="video-link">View on YouTube &raquo;</a>
+            <a class="btn btn-default hidden-xs hidden-sm" href="#" role="button" id="pdf-button"><span class="resource-type">PDF</span>
+            <h4 id="button-text">2015 PAEA Initiatives</h4><div class="right-arrow"></div></a>
+          </div>			
+        </div> <!-- end row -->
+      </div> <!-- end container -->
+    </section>
+    <section id="countdown">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <h2 class="hidden-xs hidden-sm">Check back often for regular updates and more information about this <span class="accented-text">crucial conversation.</span></h2>
+            <h2 class="visible-xs visible-sm">Check back often for updates and more info.</h2>
+          </div>
+          <div id="countdown-holder">
+            <div class="col-xs-4 col-sm-2 col-sm-offset-3">
+              <p id="days"></p>
+              <p id="days-label">days</p>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+              <p id="hours"></p>
+              <p id="hours-label">hours</p>	
+            </div>
+            <div class="col-xs-4 col-sm-2">
+              <p id="minutes"></p>
+              <p id="minutes-label">minutes</p>	
+            </div>
+          </div> <!-- end countdown-holder -->
+        </div>  <!-- end row -->
+      </div> <!-- end container -->
+    </section>
+  </main>
+
+  <footer>
+	 <div class="container">
     <div class="row email-sign-up">
       <div class="col-sm-6">
         <h2 class="hidden-xs hidden-sm">Sign up for future summit updates</h2>
@@ -105,28 +108,28 @@
       </div>
       <div class="col-sm-6">
         <form>
+          <div class="input-group">
+            <input type="email" class="form-control" id="email-input" placeholder="joe@website.com">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">Submit</button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div> <!-- end row -->
+  </div> <!-- end container -->
 
-         <div class="input-group">
-          <input type="email" class="form-control" id="email-input" placeholder="joe@website.com">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Submit</button>
-          </span>
-        </div>
-      </form>
-    </div>
-  </div> <!-- end row -->
-</div> <!-- end container -->
-<div class="bottom-divider"></div>
-<div class="container">
-  <div class="row">
-    <ul>
-     <li>&copy; Physicians Assistant Education Association (PAEA)</li>
-     <li>655 K Street NW, Suite 700, Washington, DC 20001-2385</li>
-     <li class="hidden-xs hidden-sm"><a href="emailto:stakeholdersummit@paeaonline.org">stakeholdersummit@paeaonline.org</a></li>
-   </ul>
- </div>
-</div> <!-- end container -->
-</footer>
+  <div class="bottom-divider"></div>
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li>&copy; Physicians Assistant Education Association (PAEA)</li>
+          <li>655 K Street NW, Suite 700, Washington, DC 20001-2385</li>
+          <li class="hidden-xs hidden-sm"><a href="emailto:stakeholdersummit@paeaonline.org">stakeholdersummit@paeaonline.org</a></li>
+        </ul>
+      </div>
+    </div> <!-- end container -->
+  </footer>
 
 
 
