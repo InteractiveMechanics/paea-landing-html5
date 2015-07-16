@@ -1,11 +1,3 @@
-//FONTS
-
-/*@font-face {
-	font-family: Avenir;
-	src: url(../fonts/Avenir.ttc) format('truetype');
-	}*/
-
-
 // VARIABLES
 
 $primary-font: "Avenir Next", Arial, sans-serif; // local only - need files
@@ -13,6 +5,7 @@ $primary-color: #007964; // green
 $primary-color-light: #7fcac3;
 $accent-color: #e24e34;  // coral
 $neutral-accent-color: #3d434b; // dark grey
+$transition: all 0.5s ease-in-out;
 
 
 //TYPOGRAPHY 
@@ -54,20 +47,13 @@ p {
 
 
 .accented-text {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 a {
 	color: initial;
 	&:hover {
 		color: initial;
-	}
-}
-
-a svg {
-	width: 155px;
-	ellipse:hover {
-		fill: $primary-color-light;
 	}
 }
 
@@ -84,6 +70,14 @@ a svg {
 	margin-top: -1.5em;
 	margin-left: 4.5em;
 	width: 300px;
+
+	@media screen and (max-width: 600px) {
+		margin-left: 25%;
+		margin-top: 0;
+		}
+	@media screen and (max-width: 400px) {
+		margin-left: 1em;
+	}
 }
 
 
@@ -108,11 +102,7 @@ a svg {
 }
 
 .jumbotron {
-	background: url(../images/landing_hero.png);
-		@media (-webkit-min-device-pixel-ratio: 2), 
-				(min-resolution: 192dpi) { 
-			background: url(../images/landing_hero@2x.png);
-	}
+	background: url(../images/landing_hero@2x.png);
 	background-size: cover;
 	position: relative;
 }
@@ -125,18 +115,21 @@ a svg {
 	bottom: 0;
 	h3 {
 		display: inline-block;
-		color: #fff;
+		color: #f1f2f2;
 		padding: 15px;
 	}
 }
 
 .date-banner-left {
 	text-align: right;
-	border-right: 1px solid #fff;
+	border-right: 1px solid rgba(255,255,255,0.5);
 	h3 {
 		margin-right: 20px;
+		@media screen and (max-width: 600px) {
+			margin-right: 0;
+		}
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 600px) {
 		text-align: center;
 		border-right: 1px solid transparent;
 		border-bottom: 1px solid #fff;
@@ -161,6 +154,9 @@ main {
 
 #video-image {
 	margin-top: 10px;
+	@media screen and (max-width: 600px) {
+		margin-bottom: 60px;
+	}
 }
 
 
@@ -193,10 +189,10 @@ main {
 	width: 0px;
 	border-top: 7px solid transparent;
 	border-bottom: 7px solid transparent;	
-	border-left: 12.124px solid rgba(35,31,32,0.40); // to make equilateral triangle: (border-top width + border-bottom width) * 0.866
+	border-left: 12.124px solid rgba(35,31,32,0.25); // to make equilateral triangle: (border-top width + border-bottom width) * 0.866
 	float: right;
-	margin-top: 17px;
-	margin-bottom: 14px;
+	margin-top: 12px;
+	margin-bottom: 16px;
 	
 }
 
@@ -206,26 +202,31 @@ main {
 	text-transform: initial;
 }
 
+#pdf-button {
+	background-color: #f1f2f2;
+}
 
 
 .btn-default {
 	width: 100%;
 	border: 1px solid transparent;
-	background-color: #e9e9e9;
 	color: #000;
 	margin: 20px 0;
 	padding: 10px 16px;
 	border-radius: 5px;
 	text-align: left;
-	&:hover {
+	&:hover, &:active, &:focus {
 		border: 1px solid transparent;
 		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+		transition: $transition;
 		.resource-type {
 			color: #fff;
 			background-color: $primary-color;
+			transition: $transition;
 		}
 		.right-arrow {
-			border-left: 12.124px solid rgba(35,31,32,0.25);
+			border-left: 12.124px solid rgba(35,31,32,0.5);
+			transition: $transition;
 
 		}
 	}
@@ -242,12 +243,14 @@ main {
 
 
 #countdown {
-	background: url(../images/landing_footer.png);
+	background: url(../images/landing_footer@2x.png);
 	background-size: cover;
-	@media 	(-webkit-min-device-pixel-ratio: 2), 
-			(min-resolution: 192dpi) {
-		background: url(../images/landing_footer_sm@2x.png);
-	}
+		@media screen and (max-width: 960px) {
+			background-image: url(../images/landing_footer_md@2x.png);
+		}
+		@media screen and (max-width: 600px) {
+			background-image: url(../images/landing_footer_sm@2x.png);
+		}
 	color: #fff;
 	text-align: center;
 	padding-bottom: 50px;
@@ -261,12 +264,21 @@ main {
 		margin-top: 0;
 	}
 	.accented-text {
-		color: #fff;
+		color: #f1f2f2;
+	}
+
+	#days {
+		@media screen and (max-width: 900px) {
+			margin-left: -20px;
+		}
+		@media screen and (max-width: 600px) {
+			margin-left: initial;
+		}
 	}
 
 	#days, #hours, #minutes {
 		font-size: 72px;
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 600px) {
 			font-size: 48px;
 		}
 	}
@@ -274,6 +286,21 @@ main {
 		text-transform: uppercase;
 		font-weight: 500;
 	}
+
+	/*.col-sm-2 {
+		@media screen and (max-width: 960px) {
+			width: 19.666667%;
+		}
+	}
+
+	.col-sm-offset-3 {
+		@media screen and (max-width: 960px) {
+			width: 21%;
+		}
+		@media screen and (max-width: 600px) {
+			width: 25%;
+		}
+	}*/
 }
 
 img {
@@ -294,35 +321,40 @@ footer {
 			font-size: 32px;
 			font-weight: 300;
 			margin-top: 30px;
+			@media screen and (max-width: 768px) {
+				font-size: 27px;
+			}
 			@media screen and (max-width: 480px) {
-				font-size: 2em;
+				font-size: 1.5em;
+				font-weight: 400;
 				text-align: center;
 			}
 		}
 	}
 
 	.input-group {
-		position: relative;
-		width: 80%;
+		//position: relative;
+		width: 90%;
 		@media screen and (max-width: 768px) {
 			width: 100%;
 		}
 	}
 
 	.btn-default {
-		border-radius: 12px;
+		border-radius: 12px !important;
 		border: 1px solid transparent;
 		height: 55px;
-		background-color: #777B81;
+		background: transparent;
 		position: absolute;
-		color: #fff;
+		right: 26px;
+		color: #f1f2f2;
 		font-size: 16px;
-		padding-right: 25px;
-		&:hover {
-			background-color: #777B81;
-			color: #B1B4B7;
+		&:hover, &:active, &:focus {
+			background: transparent;
+			color: $primary-color;
 			border-color: transparent;
 			box-shadow: none;
+			transition: $transition;
 		}
 	}
 
@@ -330,17 +362,19 @@ footer {
 		margin-left: 3em;
 		margin-top: 1em;
 		height: 55px;
-		border-radius: 12px;
+		border-radius: 12px !important;
 		padding: 20px 15px;
 		font-size: 20px;
 		border: 1px solid #777B81;
 		background-color: #777B81;
 		color: $neutral-accent-color;
 		font-weight: 300;
-		&:focus {
+		box-shadow: none;
+		&:focus, &:active, &:hover {
 			background-color: #B1B4B7;
 			border-color: transparent;
 			box-shadow: none;
+			transition: $transition;
 		}
 		@media screen and (max-width: 480px) {
 			margin-left: 0;
@@ -351,6 +385,7 @@ footer {
 		outline: none;
 		outline-color: none;
 		background-color: #B1B4B7;
+		transition: $transition;
 	}
 
 
@@ -380,7 +415,7 @@ footer {
 	}
 	a {
 		color: #fff;
-		&:hover {
+		&:hover, &:active, &:focus {
 			color: #fff;
 		}
 	}	

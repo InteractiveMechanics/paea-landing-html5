@@ -1,7 +1,3 @@
-/*@font-face {
-	font-family: Avenir;
-	src: url(../fonts/Avenir.ttc) format('truetype');
-	}*/
 * {
   font-family: "Avenir Next", Arial, sans-serif; }
 
@@ -31,17 +27,12 @@ p {
     margin-bottom: 90px; }
 
 .accented-text {
-  font-weight: 500; }
+  font-weight: 700; }
 
 a {
   color: initial; }
   a:hover {
     color: initial; }
-
-a svg {
-  width: 155px; }
-  a svg ellipse:hover {
-    fill: #7fcac3; }
 
 .bottom-divider {
   border-bottom: 1px solid #aaa; }
@@ -50,6 +41,13 @@ a svg {
   margin-top: -1.5em;
   margin-left: 4.5em;
   width: 300px; }
+  @media screen and (max-width: 600px) {
+    #logo {
+      margin-left: 25%;
+      margin-top: 0; } }
+  @media screen and (max-width: 400px) {
+    #logo {
+      margin-left: 1em; } }
 
 @media (min-width: 768px) {
   .col-sm-10 {
@@ -66,12 +64,9 @@ a svg {
       font-size: 24px; } }
 
 .jumbotron {
-  background: url(../images/landing_hero.png);
+  background: url(../images/landing_hero@2x.png);
   background-size: cover;
   position: relative; }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .jumbotron {
-      background: url(../images/landing_hero@2x.png); } }
 
 .date-banner {
   background: rgba(35, 31, 32, 0.25);
@@ -81,15 +76,18 @@ a svg {
   bottom: 0; }
   .date-banner h3 {
     display: inline-block;
-    color: #fff;
+    color: #f1f2f2;
     padding: 15px; }
 
 .date-banner-left {
   text-align: right;
-  border-right: 1px solid #fff; }
+  border-right: 1px solid rgba(255, 255, 255, 0.5); }
   .date-banner-left h3 {
     margin-right: 20px; }
-  @media screen and (max-width: 480px) {
+    @media screen and (max-width: 600px) {
+      .date-banner-left h3 {
+        margin-right: 0; } }
+  @media screen and (max-width: 600px) {
     .date-banner-left {
       text-align: center;
       border-right: 1px solid transparent;
@@ -108,6 +106,9 @@ main {
 
 #video-image {
   margin-top: 10px; }
+  @media screen and (max-width: 600px) {
+    #video-image {
+      margin-bottom: 60px; } }
 
 #video-link {
   color: #007964;
@@ -134,33 +135,38 @@ main {
   width: 0px;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 12.124px solid rgba(35, 31, 32, 0.4);
+  border-left: 12.124px solid rgba(35, 31, 32, 0.25);
   float: right;
-  margin-top: 17px;
-  margin-bottom: 14px; }
+  margin-top: 12px;
+  margin-bottom: 16px; }
 
 #button-text {
   font-size: 19px;
   font-weight: 500;
   text-transform: initial; }
 
+#pdf-button {
+  background-color: #f1f2f2; }
+
 .btn-default {
   width: 100%;
   border: 1px solid transparent;
-  background-color: #e9e9e9;
   color: #000;
   margin: 20px 0;
   padding: 10px 16px;
   border-radius: 5px;
   text-align: left; }
-  .btn-default:hover {
+  .btn-default:hover, .btn-default:active, .btn-default:focus {
     border: 1px solid transparent;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); }
-    .btn-default:hover .resource-type {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease-in-out; }
+    .btn-default:hover .resource-type, .btn-default:active .resource-type, .btn-default:focus .resource-type {
       color: #fff;
-      background-color: #007964; }
-    .btn-default:hover .right-arrow {
-      border-left: 12.124px solid rgba(35, 31, 32, 0.25); }
+      background-color: #007964;
+      transition: all 0.5s ease-in-out; }
+    .btn-default:hover .right-arrow, .btn-default:active .right-arrow, .btn-default:focus .right-arrow {
+      border-left: 12.124px solid rgba(35, 31, 32, 0.5);
+      transition: all 0.5s ease-in-out; }
   .btn-default h4 {
     display: inline-block;
     font-size: 16px;
@@ -169,14 +175,31 @@ main {
     margin-bottom: 10px; }
 
 #countdown {
-  background: url(../images/landing_footer.png);
+  background: url(../images/landing_footer@2x.png);
   background-size: cover;
   color: #fff;
   text-align: center;
-  padding-bottom: 50px; }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  padding-bottom: 50px;
+  	/*.col-sm-2 {
+  		@media screen and (max-width: 960px) {
+  			width: 19.666667%;
+  		}
+  	}
+  
+  	.col-sm-offset-3 {
+  		@media screen and (max-width: 960px) {
+  			width: 21%;
+  		}
+  		@media screen and (max-width: 600px) {
+  			width: 25%;
+  		}
+  	}*/ }
+  @media screen and (max-width: 960px) {
     #countdown {
-      background: url(../images/landing_footer_sm@2x.png); } }
+      background-image: url(../images/landing_footer_md@2x.png); } }
+  @media screen and (max-width: 600px) {
+    #countdown {
+      background-image: url(../images/landing_footer_sm@2x.png); } }
   #countdown h2 {
     font-size: 38px;
     margin-top: 2.5em;
@@ -185,10 +208,16 @@ main {
     line-height: 1;
     margin-top: 0; }
   #countdown .accented-text {
-    color: #fff; }
+    color: #f1f2f2; }
+  @media screen and (max-width: 900px) {
+    #countdown #days {
+      margin-left: -20px; } }
+  @media screen and (max-width: 600px) {
+    #countdown #days {
+      margin-left: initial; } }
   #countdown #days, #countdown #hours, #countdown #minutes {
     font-size: 72px; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 600px) {
       #countdown #days, #countdown #hours, #countdown #minutes {
         font-size: 48px; } }
   #countdown #days-label, #countdown #hours-label, #countdown #minutes-label {
@@ -208,52 +237,59 @@ footer {
       font-size: 32px;
       font-weight: 300;
       margin-top: 30px; }
+      @media screen and (max-width: 768px) {
+        footer .email-sign-up h2 {
+          font-size: 27px; } }
       @media screen and (max-width: 480px) {
         footer .email-sign-up h2 {
-          font-size: 2em;
+          font-size: 1.5em;
+          font-weight: 400;
           text-align: center; } }
   footer .input-group {
-    position: relative;
-    width: 80%; }
+    width: 90%; }
     @media screen and (max-width: 768px) {
       footer .input-group {
         width: 100%; } }
   footer .btn-default {
-    border-radius: 12px;
+    border-radius: 12px !important;
     border: 1px solid transparent;
     height: 55px;
-    background-color: #777B81;
+    background: transparent;
     position: absolute;
-    color: #fff;
-    font-size: 16px;
-    padding-right: 25px; }
-    footer .btn-default:hover {
-      background-color: #777B81;
-      color: #B1B4B7;
+    right: 26px;
+    color: #f1f2f2;
+    font-size: 16px; }
+    footer .btn-default:hover, footer .btn-default:active, footer .btn-default:focus {
+      background: transparent;
+      color: #007964;
       border-color: transparent;
-      box-shadow: none; }
+      box-shadow: none;
+      transition: all 0.5s ease-in-out; }
   footer .form-control {
     margin-left: 3em;
     margin-top: 1em;
     height: 55px;
-    border-radius: 12px;
+    border-radius: 12px !important;
     padding: 20px 15px;
     font-size: 20px;
     border: 1px solid #777B81;
     background-color: #777B81;
     color: #3d434b;
-    font-weight: 300; }
-    footer .form-control:focus {
+    font-weight: 300;
+    box-shadow: none; }
+    footer .form-control:focus, footer .form-control:active, footer .form-control:hover {
       background-color: #B1B4B7;
       border-color: transparent;
-      box-shadow: none; }
+      box-shadow: none;
+      transition: all 0.5s ease-in-out; }
     @media screen and (max-width: 480px) {
       footer .form-control {
         margin-left: 0; } }
   footer .btn:focus {
     outline: none;
     outline-color: none;
-    background-color: #B1B4B7; }
+    background-color: #B1B4B7;
+    transition: all 0.5s ease-in-out; }
   footer ul {
     margin: 14px; }
     @media screen and (max-width: 1024px) {
@@ -276,7 +312,7 @@ footer {
         text-align: center; } }
   footer a {
     color: #fff; }
-    footer a:hover {
+    footer a:hover, footer a:active, footer a:focus {
       color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
