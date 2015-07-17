@@ -250,6 +250,12 @@ footer {
     @media screen and (max-width: 768px) {
       footer .input-group {
         width: 100%; } }
+  @media screen and (max-width: 600px) {
+    footer .input-group .form-control {
+      width: 120%; } }
+  @media screen and (max-width: 400px) {
+    footer .input-group .form-control {
+      width: 135%; } }
   footer .btn-default {
     border-radius: 12px !important;
     border: 1px solid transparent;
