@@ -179,21 +179,7 @@ main {
   background-size: cover;
   color: #fff;
   text-align: center;
-  padding-bottom: 50px;
-  	/*.col-sm-2 {
-  		@media screen and (max-width: 960px) {
-  			width: 19.666667%;
-  		}
-  	}
-  
-  	.col-sm-offset-3 {
-  		@media screen and (max-width: 960px) {
-  			width: 21%;
-  		}
-  		@media screen and (max-width: 600px) {
-  			width: 25%;
-  		}
-  	}*/ }
+  padding-bottom: 50px; }
   @media screen and (max-width: 960px) {
     #countdown {
       background-image: url(../images/landing_footer_md@2x.png); } }
@@ -229,7 +215,7 @@ img {
 
 footer {
   background: #3d434b;
-  color: #fff; }
+  color: #f1f2f2; }
   footer .email-sign-up {
     padding: 20px 0 0 10px;
     margin-bottom: 25px; }
@@ -321,8 +307,8 @@ footer {
         margin: 15px 5px;
         text-align: center; } }
   footer a {
-    color: #fff; }
+    color: #f1f2f2; }
     footer a:hover, footer a:active, footer a:focus {
-      color: #fff; }
+      color: #f1f2f2; }
 
 /*# sourceMappingURL=main.css.map */

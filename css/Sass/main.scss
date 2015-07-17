@@ -286,21 +286,6 @@ main {
 		text-transform: uppercase;
 		font-weight: 500;
 	}
-
-	/*.col-sm-2 {
-		@media screen and (max-width: 960px) {
-			width: 19.666667%;
-		}
-	}
-
-	.col-sm-offset-3 {
-		@media screen and (max-width: 960px) {
-			width: 21%;
-		}
-		@media screen and (max-width: 600px) {
-			width: 25%;
-		}
-	}*/
 }
 
 img {
@@ -313,7 +298,7 @@ img {
 
 footer {
 	background: $neutral-accent-color;
-	color: #fff;
+	color: #f1f2f2;
 	.email-sign-up {
 		padding: 20px 0 0 10px;
 		margin-bottom: 25px;
@@ -432,9 +417,9 @@ footer {
 		}
 	}
 	a {
-		color: #fff;
+		color: #f1f2f2;
 		&:hover, &:active, &:focus {
-			color: #fff;
+			color: #f1f2f2;
 		}
 	}	
 }
