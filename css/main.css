@@ -285,11 +285,15 @@ footer {
     @media screen and (max-width: 480px) {
       footer .form-control {
         margin-left: 0; } }
-  footer .btn:focus {
-    outline: none;
+  footer .btn:active, footer .btn:focus {
+    outline: initial;
     outline-color: none;
-    background-color: #B1B4B7;
+    background-color: transparent;
     transition: all 0.5s ease-in-out; }
+  footer .btn:active:focus, footer .btn:focus {
+    outline: initial;
+    background-color: transparent;
+    border-color: transparent; }
   footer ul {
     margin: 14px; }
     @media screen and (max-width: 1024px) {

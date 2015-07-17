@@ -381,11 +381,20 @@ footer {
 		}
 	}
 
-	.btn:focus {
-		outline: none;
-		outline-color: none;
-		background-color: #B1B4B7;
-		transition: $transition;
+	.btn {
+		&:active, &:focus {
+			outline: initial;
+			outline-color: none;
+			background-color: transparent;
+			transition: $transition;
+		}
+	}
+
+
+	.btn:active:focus, .btn:focus {
+		outline: initial;
+		background-color: transparent;
+		border-color: transparent;
 	}
 
 
