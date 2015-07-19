@@ -193,6 +193,7 @@ main {
 	float: right;
 	margin-top: 12px;
 	margin-bottom: 16px;
+	transition: $transition;
 	
 }
 
@@ -215,19 +216,19 @@ main {
 	padding: 10px 16px;
 	border-radius: 5px;
 	text-align: left;
+	transition: $transition;
+	.resource-type {
+		transition: $transition;
+	}
 	&:hover, &:active, &:focus {
 		border: 1px solid transparent;
 		box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-		transition: $transition;
 		.resource-type {
 			color: #fff;
 			background-color: $primary-color;
-			transition: $transition;
 		}
 		.right-arrow {
 			border-left: 12.124px solid rgba(35,31,32,0.5);
-			transition: $transition;
-
 		}
 	}
 	h4 {
@@ -342,12 +343,12 @@ footer {
 		right: 26px;
 		color: #f1f2f2;
 		font-size: 16px;
+		transition: $transition;
 		&:hover, &:active, &:focus {
 			background: transparent;
 			color: $primary-color;
 			border-color: transparent;
 			box-shadow: none;
-			transition: $transition;
 		}
 	}
 
@@ -363,11 +364,11 @@ footer {
 		color: $neutral-accent-color;
 		font-weight: 300;
 		box-shadow: none;
+		transition: $transition;
 		&:focus, &:active, &:hover {
 			background-color: #B1B4B7;
 			border-color: transparent;
 			box-shadow: none;
-			transition: $transition;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -376,11 +377,11 @@ footer {
 	}
 
 	.btn {
+		transition: $transition;
 		&:active, &:focus {
 			outline: initial;
 			outline-color: none;
 			background-color: transparent;
-			transition: $transition;
 		}
 	}
 
